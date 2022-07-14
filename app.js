@@ -16,7 +16,7 @@ app.post("/signup.html", function(req,res){
     members:[
         {
           email_address:emailId,
-          status: "Subscribed",
+          status: "subscribed",
           merge_fields:{
             FNAME: fname,
             LNAME: lname
