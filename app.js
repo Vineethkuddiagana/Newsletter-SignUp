@@ -16,7 +16,7 @@ app.post("/signup.html", function(req,res){
     members:[
         {
           email_address:emailId,
-          status: "pending",
+          status: "Subscribed",
           merge_fields:{
             FNAME: fname,
             LNAME: lname
@@ -51,7 +51,7 @@ app.post("/signup.html", function(req,res){
 app.post("/",function(req,res){
   res.redirect("/")
 })
-app.listen(process.env.PORT,function(){
+app.listen(process.env.PORT || 3000,function(){
   console.log("server is running on 3000")
 })
 
